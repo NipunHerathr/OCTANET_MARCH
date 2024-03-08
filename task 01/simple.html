@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Landing page</title>
+ <style type="text/css">
+ *{padding: 0; margin:0; box-sizing: border-box;}
+
+ header{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgba(25, 26, 23, 0.7),rgba(6, 6, 5, 0.4)),
+             url(/images/cover.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+
+ }
+
+ nav{
+    width: 100%;
+    height: 100px;
+    
+    color: rgb(242, 249, 246);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+ }
+
+ .logo{
+    font-size: 3em;
+   font-family: fantasy;
+   color: rgb(214, 235, 27);
+    
+
+    letter-spacing: 5px;
+ }
+
+ .menu a{
+
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    position: relative;
+
+ }
+
+ .menu a:before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid indianred;
+    transition: 0.4s linear;
+}
+.menu a:hover:before{
+    width: 90%;
+
+}
+
+ .register a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    background: indianred;
+    border-radius: 8px;
+    transition: 0.5s;
+
+ }
+
+ .register a:hover{
+    background: transparent;
+    border:1px solid indianred;
+ }
+   .h-txt{
+    max-width: 650px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+
+ } 
+ .h-txt span{
+    letter-spacing: 5px;
+ }
+ .h-txt h1{
+    font-size: 3.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.h-txt a{
+    text-decoration: none;
+    background: indianred;
+    color: white;
+    padding: 10px  20px;
+    letter-spacing: 5px;
+}
+
+.h-txt a:hover{
+    background :transparent;
+}
+
+</style>
+</head>
+<body>
+    
+</body>
+<header>
+    <nav>
+        <div class="logo">
+         SL-Travals
+        </div>
+                          
+    
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">HIll Stations</a>
+            <a href="#">Best Ofer</a>
+            <a href="#">Over Sites</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="register">
+            <a href="#">register</a>
+        </div>
+  </nav>
+  <section class="h-txt">
+    <span>Enjoy with</span>
+    <h1>Srilankan Traval <br> Guide</h1>
+
+    <br>
+    <a href="#">Book Your Trip</a>
+  </section>
+    
+  </section>
+</header>
+</html>
